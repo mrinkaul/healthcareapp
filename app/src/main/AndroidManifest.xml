@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Healthcareapp">
         <activity
-            android:name="com.example.com.rwc.symptomtracker.MainActivity"
+            android:name="com.rwc.symptomtracker.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
