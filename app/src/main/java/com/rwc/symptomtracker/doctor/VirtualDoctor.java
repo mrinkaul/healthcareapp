@@ -17,4 +17,11 @@ public class VirtualDoctor {
 
         return DIAGNOSIS_UNKNOWN;
     }
+
+    /**** TEST
+     *     public static void main(String[] args) {
+     *         System.out.println(VirtualDoctor.diagnose(true, false, true, false, false));
+     *         System.out.println(VirtualDoctor.diagnose(false, false, true, false, false));
+     *     }
+     */
 }
