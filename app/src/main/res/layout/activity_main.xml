@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:background="#189AB4"
     android:backgroundTint="#FFFFFF"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    app:navGraph="@navigation/nav_graph">
 
 
     <Button
@@ -19,6 +20,7 @@
         android:layout_marginBottom="111dp"
         android:backgroundTint="#03A9F4"
         android:text="Check Symptoms"
+        android:onClick="onClick"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +48,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
