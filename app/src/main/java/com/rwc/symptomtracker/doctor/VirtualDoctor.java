@@ -1,13 +1,13 @@
 package com.rwc.symptomtracker.doctor;
 
 public class VirtualDoctor {
-    public static String DIAGNOSIS_COVID = "COVID 19";
-    public static String DIAGNOSIS_COMMON_COLD = "COMMON COLD";
-    public static String DIAGNOSIS_PNEUMONIA = "PNEUMONIA";
-    public static String DIAGNOSIS_TUBERCULOSIS = "TUBERCULOSIS";
-    public static String DIAGNOSIS_UNKNOWN = "UNKNOWN";
-    public static String DIAGNOSIS_CHAGAS = "CHAGAS DISEASE";
-    public static String DIAGNOSIS_MALARIA = "MALARIA";
+    public static String DIAGNOSIS_COVID = "Covid-19";
+    public static String DIAGNOSIS_COMMON_COLD = "Common cold";
+    public static String DIAGNOSIS_PNEUMONIA = "Pneumonia";
+    public static String DIAGNOSIS_TUBERCULOSIS = "Tuberculosis";
+    public static String DIAGNOSIS_UNKNOWN = "unknown";
+    public static String DIAGNOSIS_CHAGAS = "Chagas disease";
+    public static String DIAGNOSIS_MALARIA = "Malaria";
 
     public static String DEFINITION_COVID = "A mild to severe respiratory illness that is caused by a coronavirus (Severe acute respiratory syndrome coronavirus 2, is transmitted chiefly by contact with infectious material.";
     public static String DEFINITION_COMMON_COLD = "The common cold is a viral infection of your nose and throat (upper respiratory tract). It's usually harmless, although it might not feel that way. Many types of viruses can cause a common cold.";

@@ -17,7 +17,7 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Click on your symptoms and then click Diagnose Now"
+            android:text="Click on your symptoms and then click the Diagnose Now button."
             android:textColor="@color/black"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
