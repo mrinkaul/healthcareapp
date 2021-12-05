@@ -2,6 +2,7 @@ package com.rwc.symptomtracker.frontendjava;
 
 import static com.rwc.symptomtracker.Constants.GLOBAL_TAG;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -26,5 +27,8 @@ public class SymptomsActivity extends AppCompatActivity {
     public void onClickButtonDiagnose(View view) {
         Log.d(TAG, "Diagnose button clicked");
         checkboxFever = (CheckBox) findViewById(R.id.checkboxFever);
+
+        Intent intent = new Intent(this, DiagnosisActivity.class);
+        startActivity(intent);
     }
 }
