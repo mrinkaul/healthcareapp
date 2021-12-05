@@ -36,22 +36,22 @@
         android:text="xxxx" />
 
     <TextView
-        android:id="@+id/textViewRecommendationLabel"
+        android:id="@+id/textViewDefinitionLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
-        android:text="RECOMMENDATION:"
+        android:text="DEFINITION:"
         android:textSize="40sp" />
 
     <TextView
-        android:id="@+id/textViewRecommendation"
+        android:id="@+id/textViewDefinition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:layout_marginBottom="30dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textViewRecommendationLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewDefinitionLabel"
         android:text="yyyy" />
 
         <Button
