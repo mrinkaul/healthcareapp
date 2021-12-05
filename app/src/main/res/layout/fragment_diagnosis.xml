@@ -23,14 +23,14 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:textSize="40sp"
+        android:textSize="30sp"
         android:text="DIAGNOSIS:" />
 
     <TextView
         android:id="@+id/textViewDiagnosis"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewDiagnosisLabel"
         android:text="xxxx" />
@@ -43,13 +43,13 @@
         android:layout_marginBottom="10dp"
         app:layout_constraintStart_toStartOf="parent"
         android:text="DEFINITION:"
-        android:textSize="40sp" />
+        android:textSize="30sp" />
 
     <TextView
         android:id="@+id/textViewDefinition"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:layout_marginBottom="30dp"
         app:layout_constraintBottom_toBottomOf="@+id/textViewDefinitionLabel"
         android:text="yyyy" />

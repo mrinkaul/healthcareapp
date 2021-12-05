@@ -18,6 +18,8 @@ public class Symptoms{
     public Boolean loss_of_taste;
     public Boolean swollenlymph;
     public Boolean loss_of_smell;
+    public Boolean vomiting;
+    public Boolean diarrhea;
 
     public Symptoms(Boolean fever,
                     Boolean long_lasting_cough,
@@ -35,7 +37,9 @@ public class Symptoms{
                     Boolean stomachache,
                     Boolean loss_of_taste,
                     Boolean swollenlymph,
-                    Boolean loss_of_smell) {
+                    Boolean loss_of_smell,
+                    Boolean vomiting,
+                    Boolean diarrhea) {
         this.fever = fever;
         this.long_lasting_cough = long_lasting_cough;
         this.sneezing = sneezing;
@@ -53,5 +57,7 @@ public class Symptoms{
         this.loss_of_taste = loss_of_taste;
         this.swollenlymph = swollenlymph;
         this.loss_of_smell = loss_of_smell;
+        this.vomiting = vomiting;
+        this.diarrhea = diarrhea;
     }
 }

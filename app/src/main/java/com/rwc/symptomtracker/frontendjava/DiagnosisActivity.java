@@ -51,7 +51,9 @@ public class DiagnosisActivity extends AppCompatActivity {
                     symptoms.stomachache,
                     symptoms.loss_of_taste,
                     symptoms.swollenlymph,
-                    symptoms.loss_of_smell);
+                    symptoms.loss_of_smell,
+                    symptoms.vomiting,
+                    symptoms.diarrhea);
 
             diagnosisTextView.setText(fullDiagnosis.diagnosis);
             definitionTextView.setText(fullDiagnosis.definition);

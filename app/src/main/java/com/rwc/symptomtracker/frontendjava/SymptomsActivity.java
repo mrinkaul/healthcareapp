@@ -45,7 +45,10 @@ public class SymptomsActivity extends AppCompatActivity {
                 ((CheckBox)findViewById(R.id.checkboxStomachache)).isChecked(),
                 ((CheckBox)findViewById(R.id.checkboxLossOfTaste)).isChecked(),
                 ((CheckBox)findViewById(R.id.checkboxSwollenLymph)).isChecked(),
-                ((CheckBox)findViewById(R.id.checkboxLossOfSmell)).isChecked());
+                ((CheckBox)findViewById(R.id.checkboxLossOfSmell)).isChecked(),
+                ((CheckBox)findViewById(R.id.checkboxVomiting)).isChecked(),
+                ((CheckBox)findViewById(R.id.checkboxDiarrhea)).isChecked());
+                
         Log.d(TAG, "Symptoms created = "+symptoms);
 
         Gson gson = new Gson();
