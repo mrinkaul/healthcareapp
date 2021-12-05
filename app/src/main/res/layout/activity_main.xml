@@ -12,7 +12,7 @@
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonCheckSymptoms"
         android:layout_width="231dp"
         android:layout_height="84dp"
         android:layout_marginStart="90dp"
@@ -20,7 +20,7 @@
         android:layout_marginBottom="111dp"
         android:backgroundTint="#03A9F4"
         android:text="Check Symptoms"
-        android:onClick="onClick"
+        android:onClick="onClickButtonCheckSymptoms"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
