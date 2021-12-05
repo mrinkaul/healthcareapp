@@ -17,11 +17,9 @@
             android:id="@+id/textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#00BCD4"
-            android:backgroundTint="#43C0D3"
-            android:text="   Check Your Symptoms"
-            android:textColor="@color/white"
-            android:textSize="35sp"
+            android:text="Click on your symptoms and then click Diagnose Now"
+            android:textColor="@color/black"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.454"
@@ -29,11 +27,24 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.048" />
 
+        <Button
+            android:id="@+id/buttonDiagnoseTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#03A9F4"
+            android:onClick="onClickButtonDiagnose"
+            android:text="Diagnose Now"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="parent" />
+
     <ScrollView
         android:id="@+id/scrollView6"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonDiagnoseTop"
         android:fillViewport="true">
 
         <LinearLayout
@@ -43,10 +54,10 @@
             app:layout_constraintBottom_toBottomOf="@+id/scrollView6">
 
             <CheckBox
-                android:id="@+id/checkbox"
+                android:id="@+id/checkboxFever"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Coughing"
+                android:text="Fever"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -56,10 +67,10 @@
                 app:layout_constraintVertical_bias="0.755" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxLongLastingCough"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fast heart rate"
+                android:text="Long Lasting Cough"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -69,10 +80,10 @@
                 app:layout_constraintVertical_bias="0.137" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxSneezing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Fever"
+                android:text="Sneezing"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -83,10 +94,10 @@
                 app:layout_constraintVertical_bias="0.263" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxBodypain"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Loss of appetite"
+                android:text="Bodypain"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -97,10 +108,10 @@
                 app:layout_constraintVertical_bias="0.348" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxLossOfAppetite"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shaking/chills"
+                android:text="Loss of Appetite"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -111,10 +122,40 @@
                 app:layout_constraintVertical_bias="0.428" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxNightSweats"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Shortness of breath"
+                android:text="Night Sweats"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.286"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.979" />
+
+
+            <CheckBox
+                android:id="@+id/checkboxShakingChills"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shaking Chills"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.286"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.979" />
+
+
+            <CheckBox
+                android:id="@+id/checkboxShortnessOfBreath"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Shortness of Breath"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -125,7 +166,7 @@
                 app:layout_constraintVertical_bias="0.979" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxFatigue"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Fatigue"
@@ -139,7 +180,7 @@
                 app:layout_constraintVertical_bias="0.511" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkMucus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Greenish, yellow or bloody mucus"
@@ -153,10 +194,10 @@
                 app:layout_constraintVertical_bias="0.672" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxChestPains"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Frequent Sweating"
+                android:text="Chest Pains"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -167,10 +208,10 @@
                 app:layout_constraintVertical_bias="0.823" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxFastHeartrate"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Sharp pain in the chest"
+                android:text="Fast Heart Rate"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -181,10 +222,10 @@
                 app:layout_constraintVertical_bias="0.898" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxHeadache"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nausea"
+                android:text="Headache"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -195,10 +236,10 @@
                 app:layout_constraintVertical_bias="0.588" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxStomachache"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="ASSSSS"
+                android:text="Stomachache"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -209,10 +250,39 @@
                 app:layout_constraintVertical_bias="0.588" />
 
             <CheckBox
-                android:id="@+id/checkBox"
+                android:id="@+id/checkboxLossOfTaste"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="MMMM"
+                android:text="Loss of Taste"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.126"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.588" />
+
+            <CheckBox
+                android:id="@+id/checkboxSwollenLymph"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Swollen Lymph"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.126"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.588" />
+
+
+            <CheckBox
+                android:id="@+id/checkboxLossOfSmell"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Loss of Smell"
                 android:textColor="@color/black"
                 android:textSize="30sp"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -226,9 +296,9 @@
                 android:id="@+id/buttonDiagnose"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="90dp"
-                android:layout_marginEnd="90dp"
-                android:layout_marginBottom="111dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
                 android:backgroundTint="#03A9F4"
                 android:onClick="onClickButtonDiagnose"
                 android:text="Diagnose Now"
