@@ -18,6 +18,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.rwc.symptomtracker.frontendjava.SymptomsActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name="com.rwc.symptomtracker.frontendjava.DiagnosisActivity"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>
