@@ -63,4 +63,8 @@ public class DiagnosisActivity extends AppCompatActivity {
         definitionTextView = (TextView) findViewById(R.id.textViewDefinition);
     }
 
+    public void onClickButtonBack() {
+        Intent intent = new Intent(this, SymptomsActivity.class);
+        startActivity(intent);
+    }
 }
