@@ -37,7 +37,7 @@ public class VirtualDoctor {
                                          Boolean vomiting,
                                          Boolean diarreha ){
 
-        if (fever && long_lasting_cough && loss_of_taste && loss_of_smell)
+        if ((fever || long_lasting_cough) && (loss_of_taste && loss_of_smell))
             return new FullDiagnosis(DIAGNOSIS_COVID, DEFINITION_COVID);
         if (!fever && sneezing)
             return new FullDiagnosis(DIAGNOSIS_COMMON_COLD, DEFINITION_COMMON_COLD);

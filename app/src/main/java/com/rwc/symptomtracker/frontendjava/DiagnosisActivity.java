@@ -68,5 +68,6 @@ public class DiagnosisActivity extends AppCompatActivity {
     public void onClickButtonBack() {
         Intent intent = new Intent(this, SymptomsActivity.class);
         startActivity(intent);
+
     }
 }
